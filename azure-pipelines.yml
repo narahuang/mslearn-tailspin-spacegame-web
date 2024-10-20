@@ -1,3 +1,7 @@
 pool: MyAgentPool
 steps:
 - bash: echo hello world
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'Azure subscription 1(5d1e48b2-9605-4fd6-bcbb-b7de9d7a1499)'
+    command: 'build'
